@@ -3,7 +3,6 @@
 #include <omnetpp.h>
 
 
-// Class Declaration (would typically be in a seperate .h file)
 class Queue : public omnetpp::cSimpleModule
 {
 private:

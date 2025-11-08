@@ -2,8 +2,6 @@
 #include <string.h>
 #include <omnetpp.h>
 
-
-// Class Declaration (would typically be in a seperate .h file)
 class Server : public omnetpp::cSimpleModule
 {
 private:

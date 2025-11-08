@@ -6,21 +6,6 @@
 using namespace omnetpp;
 Define_Module(Server);
 
-//class Server : public omnetpp::cSimpleModule
-//{
-//private:
-//    omnetpp::cMessage *currentEvent;
-//    omnetpp::cMessage *endServiceEvent;
-//public:
-//    Queue();
-//    virtual ~Queue();
-//    bool isIdle();
-//protected:
-//    virtual void initialize();
-//    virtual void finish();
-//    virtual void handleMessage(omnetpp::cMessage *msg);
-//};
-//
 
 Server::Server() {
     currentEvent = nullptr; // Store the current event (customer) being served
@@ -31,7 +16,6 @@ Server::~Server() {
     cancelAndDelete(endServiceEvent);
 };
 
-// TODO: Add data collection in the following functions:
 void Server::initialize() {
     cDisplayString& display = getDisplayString();
     endServiceEvent = new cMessage("endService");

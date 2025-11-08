@@ -8,21 +8,6 @@ using namespace omnetpp;
 
 Define_Module(Queue);
 
-//class Queue : public omnetpp::cSimpleModule
-//{
-//private:
-//    omnetpp::cQueue buffer;
-//public:
-//    Queue();
-//    virtual ~Queue();
-//    bool isEmpty()
-//    void sendNextArrival();
-//protected:
-//    virtual void initialize();
-//    virtual void finish();
-//    virtual void handleMessage(omnetpp::cMessage *msg);
-//};
-//
 
 // Nothing to do here (no pointers :) )
 Queue::Queue() {};
